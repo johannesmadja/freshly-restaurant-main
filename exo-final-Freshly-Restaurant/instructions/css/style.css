@@ -1,0 +1,865 @@
+@import url("font-face.css");
+
+/* *********************************************************************
+BOX-SIZING
+********************************************************************* */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* *********************************************************************
+RESET
+********************************************************************* */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: "athiti", sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* *********************************************************************
+VARIABLE
+********************************************************************* */
+:root {
+    --clr-marron: #4c4343;
+    --clr-beige: #ebe3db;
+    --clr-rouge: #950000;
+}
+
+
+/* *********************************************************************
+CLASSES UTILITAIRES
+********************************************************************* */
+.text-align {
+    text-align: center;
+}
+
+.background-beige {
+    background-color: var(--clr-beige);
+}
+
+
+
+/* *********************************************************************
+TYPOGRAPHIE
+********************************************************************* */
+h1,
+h2,
+h3 {
+    font-family: "merienda";
+}
+
+.header span {
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.footer h2 {
+    font-size: 18px;
+}
+
+.ul-menus,
+.readmore {
+    font-size: 1.5rem
+}
+
+.footer:not(h2) {
+    font-size: 1.6rem;
+}
+
+
+/* *********************************************************************
+CONTAINER
+********************************************************************* */
+.container {
+    max-width: 1400px;
+    margin-inline: auto;
+    padding: 2.3rem 2rem;
+}
+
+
+/* *********************************************************************
+HEADER
+********************************************************************* */
+.header {
+    padding-top: 5rem;
+    background-image: linear-gradient(to bottom, var(--clr-beige) 5%, white);
+}
+
+/* Taille des images */
+.header img {
+    width: 20%;
+}
+
+/* Titre du restaurant */
+.header span {
+    display: block;
+    font-weight: 600;
+}
+
+/* Couleurs du titre - restaurant */
+.header a {
+    color: #4c4343;
+}
+
+/* La navigation */
+.ul-nav a {
+    display: block;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    border-block: 1px solid var(--clr-marron);
+    background-color: var(--clr-beige);
+
+    transition: all 1s;
+}
+
+/* Background de la page active */
+.ul-nav a.page-active {
+    background-color: var(--clr-marron);
+    color: #fff;
+}
+
+
+/* *********************************************************************
+MAIN
+********************************************************************* */
+/* Taille des images */
+.container img {
+    max-width: 100%;
+}
+
+/* Insertion des icones des titres */
+.header span::before,
+.header span::after,
+.main h1::after,
+.main h1::before,
+.main h2::before,
+.main h2::after,
+.main h3::before,
+.main h3::after {
+    position: relative;
+    bottom: 0.6rem;
+    margin-inline: 1rem;
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr-rouge);
+
+}
+
+/* Reset de la taille et de la position des icones h2 - h3 */
+.main h2::before,
+.main h2::after,
+.main h3::before,
+.main h3::after {
+    bottom: 0.4rem;
+    font-size: 1rem;
+}
+
+/* Slides - Dots */
+.slick-dots li button:before {
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--clr-rouge);
+}
+
+/* Slides - Flèches de défilement */
+.slick-prev {
+    left: 20px;
+}
+
+button.slick-prev.slick-arrow {
+    z-index: 1;
+}
+
+.slick-next {
+    right: 20px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 2.6rem;
+}
+
+/* Slides - Marge inférieure */
+.slick-dotted.slick-slider {
+    margin-bottom: 8rem;
+}
+
+/* Section Special Menu | Reset des marges figure*/
+figure {
+    margin-inline: 0;
+}
+
+/* Section Special Menu | Reset des marges article*/
+.special-menu article {
+    padding-block: 1rem 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Bordures et icone des li (sous les menus) */
+.ul-menus li {
+    padding-block: .5rem;
+    border-bottom: 1px dashed var(--clr-marron);
+}
+
+.ul-menus li::before {
+    position: relative;
+    bottom: .1rem;
+    content: "\f005";
+    margin-inline: 1.9rem .5rem;
+    font-family: "Font Awesome 5 Free";
+    font-size: .8rem;
+    font-weight: 700;
+    color: var(--clr-rouge);
+}
+
+/* Cacher le texte qui apparait au survol */
+.block-au-survol {
+    display: none;
+}
+
+/* Les liens see-more */
+.readmore img {
+    position: relative;
+    bottom: -0.5rem;
+    width: 18px;
+}
+
+.readmore {
+    display: block;
+    margin-inline: 1.5rem;
+    padding-block: 0.7rem;
+    color: #fff;
+    background-color: var(--clr-marron);
+
+    transition: all 1s;
+}
+
+
+
+/* *********************************************************************
+FOOTER
+********************************************************************* */
+/* Image de fond footer */
+.footer {
+    background-image: url("../ressources/images/footer-bg.jpg");   
+    color: #fff;
+}
+
+/* Couleur des liens du footer */
+.footer a {
+    color: #fff;
+}
+
+/* Marge des titres */
+.footer h2 {
+    margin-top: 0;
+    padding-bottom: .7rem;
+    border-bottom: 1px dashed var(--clr-beige);
+}
+
+/* Marges des sections */
+.footer section {
+    padding: 2rem 1rem;
+}
+
+/* Section - Info restaurant */
+.footer-freshly-restaurant {
+    padding-block: 2rem;
+}
+
+/* Style du lien dans address */
+address {
+    font-style: normal;
+}
+
+/* Icone des réseaux sociaux */
+.brands-icone {
+    font-size: 2.4rem;
+    margin-right: 1.5rem;
+    transition: all 1.5s linear;
+}
+
+/* Section - 3wa Academy */
+.wa-academy img {
+    width: 55px;
+}
+
+.wa-academy p {
+    margin-top: 0;
+}
+
+.wa-academy {
+    padding: 2rem 1rem 0.5rem 1rem;
+    font-size: 1.4rem;
+    background-color: #444;
+}
+
+
+
+@media screen and (min-width:781px) {
+    /* *******************************************************
+    HEADER
+    ******************************************************** */
+    /* La navigation */
+    .ul-nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .ul-nav a {
+        border: 1px solid var(--clr-beige);
+    }
+
+
+    /* *******************************************************
+    FOOTER
+    ********************************************************* */
+    /* Parent flexible | section - opening - contact - social_media */
+    .footer-freshly-restaurant {
+        display: flex;
+        gap: 2rem;
+    }
+
+    /* Items flexibles */
+    .footer-freshly-restaurant section {
+        flex-basis: calc((100% / 3) - 2rem);
+    }
+
+
+}   
+
+
+
+@media screen and (min-width:981px) {
+     /* *******************************************************
+    HEADER
+    ********************************************************* */
+    /* Reset de la taille du header et du footer à celle du container */
+    .header div.en-tete-page {
+        padding: 2.3rem 4rem;
+    }
+    
+    /* Parents flexibles */
+    .header .en-tete-page,
+    .header .en-tete-page>a {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Items flexible - nav */
+    .nav {
+        flex-basis: 65%;
+    }
+
+    /* Parents flexibles - liens de navigation */
+    .ul-nav {
+        justify-content: space-between;
+        column-gap: 1rem;
+        background-color: transparent;
+    }
+
+    /* Survol des liens de navigation */
+    .ul-nav a:hover:not(a.page-active),
+    .ul-nav a:focus:not(a.page-active) {
+        color: #fff;
+        background-color: var(--clr-rouge);
+    }
+
+    /* Marge interne header et Taille span */
+    .header {
+        padding-inline: 4rem;
+    }
+
+    .header span {
+        font-size: 2.5rem;
+    }
+
+
+    /* *******************************************************
+    MAIN
+    ********************************************************* */
+    /* Float - image article welcome */
+    .welcome img {
+        width: 40.5%;
+        float: right;
+        margin-left: 1rem;
+    }
+
+    .welcome {
+        overflow: auto;
+        margin-bottom: 2rem;
+    }
+
+    /* Special-menu _ Parent grid */
+    .special-menu {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+
+    .special-menu h2 {
+        grid-area: 1 / 1 / 2 / -1;
+    }
+ 
+    /* Block qui apparait au survol du menu*/
+    .image-survol {
+        position: relative;
+    }
+
+    .block-au-survol { 
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2.5rem;
+
+        background-color: rgba(76,67,67,.9);
+        opacity: 0;
+        transition: all 1.2s linear;
+    }
+
+    .texte-au-survol { 
+        border: 3px solid #fff;
+        height: 100%;
+    }
+
+    .texte-au-survol p {
+        position: relative;
+        top: 25%;
+        color: #fff;
+    }
+
+    .texte-au-survol p:not(span) {
+        font-style: italic;
+    }
+
+    .texte-au-survol span {
+        font-size: 5rem;
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+
+    .block-au-survol:hover {
+        opacity: 1;
+    }
+
+    /* Les liens readmore */
+    .readmore:hover {
+        background-color: var(--clr-rouge);
+    }
+
+
+    /* *******************************************************
+    FOOTER
+    ********************************************************* */
+    /* Les icones au survol */
+    .brands-icone:hover,
+    .brands-icone:focus {
+        color: var(--clr-rouge);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////// ====================================================================
+LE STYLE DE LA PAGE ABOUT 
+===========================================================================///////////////////////////////////////////*/
+
+/* ********************************************************************************************
+MAIN
+******************************************************************************************** */
+
+/* Taille adaptative de la video */
+.container video {
+    max-width: 100%;
+}
+
+/* Padding-inline de la video */
+.conteneur-video {
+    padding-inline: 4rem;
+    margin-inline: auto;
+}
+
+/* Marge intérieure de l'article private dining */
+.conteneur-image {
+    padding-block: 2rem 1rem;
+}
+
+/* Ombres des images et transition */
+.conteneur-image img {
+    box-shadow: .5rem .5rem 1.2rem -.5rem;
+    transition: all .8s;
+}
+
+/* Au survol */
+.conteneur-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Marges inférieures des articles */
+.about-us {
+    margin-block: 4rem;
+}
+.private-dining {
+    margin-bottom: 2rem;
+}
+
+
+
+
+@media screen and (min-width: 781px) {
+    /* *******************************************************
+    MAIN
+    ********************************************************* */
+    .conteneur-image {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 1rem;
+        padding-inline: 1rem;
+    }
+
+    .conteneur-image figure {
+        flex-basis: calc((100% / 2) - 1rem);
+    }
+}
+
+
+
+
+
+
+
+/*/////////////////////////////////////////////// ====================================================================
+LE STYLE DE LA PAGE MENU
+=============================================================================////////////////////////////////////// */
+
+
+/* ********************************************************************
+MAIN
+******************************************************************** */
+/* Marge inférieure des button */
+.conteneur-button {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+/* buttons */
+button {
+    padding: 0.7rem 1.7rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    background-color: var(--clr-beige);
+    border: 1px solid var(--clr-beige);
+    transition: all 1s;
+}
+
+button:hover {
+    background-color: var(--clr-rouge);
+    color: #fff;
+}
+
+/* Selection du bouton actif */
+.mixitup-control-active {
+    background-color: var(--clr-rouge);
+    color: #fff;
+}
+
+/* Parent flexible - Classe commune */
+.image-conteneur {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5rem 1.7rem;
+    padding: 3rem 1.5rem 4rem 1.5rem;
+}
+
+
+/* Items flexibles - Taille des items et Ombre des images */
+.items-flex {
+    width: calc((100% / 2) - 1.7rem);
+    box-shadow: .5rem .5rem 1.2rem -.5rem;
+}
+
+/* Redimansion de l'image pour couvrir le container */
+.items-flex>img {
+    vertical-align: middle;
+}
+
+/* Marge supérieure de la section details-menu */
+.details-menus {
+    margin-top: 5rem;
+}
+
+/* Marge inférieure des section */
+.container section {
+    margin-bottom: 4rem;
+}
+
+.texte-menu-hover {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 781px) {
+    /* ********************************************************
+    MAIN
+    ********************************************************* */
+    .items-flex {
+        width: calc((100% / 3) - 1.7rem);
+    }
+}
+
+
+@media screen and (min-width: 981px) {
+    /* ********************************************************
+    MAIN
+    ********************************************************* */
+    
+     /* Block de texte qui apparait au survol du menu*/
+
+     /* Taille de l'image fork-knife */
+     .fork-knife {
+        display: block;
+        margin-inline: auto;
+        width: 4rem;
+     }
+
+     /* Position de la div parent */
+     .items-flex {
+        position: relative;
+     }
+
+     /* Block à afficher au survol - style */
+     .texte-menu-hover {
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 2.5rem;
+
+        background-color: rgba(76,67,67,.9);
+        opacity: 0;
+        transition: all .5s linear;
+
+     }
+
+     /* Zoom - sur les images */
+     .images-menus {
+        z-index: 1;
+        transition: all .5s linear;
+     }
+
+     .items-flex:hover .images-menus {
+        transform: scale(1.1);
+     }
+
+    /* Nom du menu */
+    .texte-menu-hover p {
+        border: 3px solid #fff;
+        height: 100%;
+        padding-top: 6rem;
+        margin: 0;
+
+        font-family: "merienda";
+        color: #fff;
+
+        text-align: center;
+    }
+    
+    /* Au survol */
+    .texte-menu-hover:hover {
+        transform: scale(1.1);
+        opacity: 1;
+        z-index: 1;
+    }
+
+}
+
+
+
+
+/*/////////////////////////////////////////////// ========================================================================
+LE STYLE DE LA PAGE CONTACT
+=========================================================================///////////////////////////////////////////////*/
+/* ******************************************************************
+ MAIN
+****************************************************************** */
+
+/* Paragraphe - italic */
+.texte-italic {
+    font-style: italic;
+}
+
+/* Padding de la form baslise */
+form {
+    padding: 3rem 1.5rem;
+}
+
+/* Marge et reset bordure du fieldset */
+fieldset {
+    border: none;
+    margin-bottom: 2.5rem;
+}
+
+/* Marge inférieure des div dans fieldset */
+fieldset div {
+    margin-bottom: 1rem;
+}
+
+/* Font-family label et legend */
+label,
+legend {
+    font-family: "merienda";
+}
+
+/* Legend - Taille et marge inférieure */
+legend {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Label - Taille */
+label {
+    font-size: 1.6rem;
+}
+
+/* Insertion des icones label */
+label::before {
+    position: relative;
+    bottom: 8px;
+    left: -10px;
+    padding-bottom: 2px;
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    font-size: 0.8rem;
+    border-bottom: 1px dotted var(--clr-rouge);
+    color: var(--clr-rouge);
+}
+
+/* Champs de saisi - Taille et bordure */
+input,
+textarea {
+    width: 100%;
+    padding-left: 1.5rem;
+    border: 1px solid rgb(107, 99, 99);
+    border-radius: 5px;
+}
+
+/* Textarea - Marge interieure */
+textarea {
+    padding-top: 3rem;
+}
+
+/* Input - Hauteur */
+input {
+    height: 4rem;
+}
+
+/* button */
+.toolbar button {
+    margin-right: 0;
+    padding: 0.8rem 4.5em;
+    background-color: var(--clr-marron);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+
+    transition: all 1s;
+}
+
+.toolbar button:hover {
+    background-color: var(--clr-rouge);
+}
+
+
+
+@media screen and (min-width:781px) {
+    
+     /* ********************************************************
+    MAIN
+    ********************************************************* */
+    form>div {
+        display: flex;
+        justify-content: space-around;
+        gap: 2.5rem;
+    }
+    
+    form>div fieldset:first-of-type,
+    form>div fieldset:nth-last-of-type(1) {
+        flex-basis: calc((100% / 2) - 2.5rem);
+    }
+}
+
+
+@media screen and (min-width:781px) {
+    
+    /* ********************************************************
+    MAIN
+    ********************************************************* */
+    /* Form - largeur */
+    form {
+        width: 70%;
+        margin-inline: auto;
+    }
+
+    /* button */
+    .toolbar button {
+        width: 60%;
+    }
+}

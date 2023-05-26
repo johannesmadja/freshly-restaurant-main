@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="description" content="">
+    <!-- meta keywords -->
+    <meta name="keywords" content="">
+
+    <!-- favicon -->
+    <link rel="icon" href="ressources/images/favicon.png" type="image/png">
+
+    <!-- intégration du CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Importation du script de fontawesome -->
+     <script src="https://kit.fontawesome.com/5032bc1a8b.js" crossorigin="anonymous"></script>
+
+    <title>Freshly Restaurant</title>
+</head>
+
+<body>
+    <header class="header text-align">
+        <div class="container en-tete-page">
+            <a href="home.html">
+                <img src="ressources/images/logo.png" alt="logo Freshly Restaurant">
+                <span>Freshly Restaurant</span>
+            </a>
+            <nav class="nav">
+                <ul class="ul-nav background-beige">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menus.html">Menus</a></li>
+                    <li><a href="contact.html" class="page-active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <section>
+                <h2 class="text-align">Contact us</h2>
+                <p class="text-align">If your want to make a reservation, please complete this form.</p>
+                <p class="text-align texte-italic">Fields with<span> * </span>are required.</p>
+
+                <form action="#" method="post" class="background-beige">
+                    <div>
+
+                        <fieldset>
+                            <legend>Reservation</legend>
+                            <div>
+                                <label for="date">Date</label><br>
+                                <input type="date" name="date" id="date">
+                            </div>
+                            <div>
+                                <label for="time">Time</label><br>
+                                <input type="time" name="time" id="time">
+                            </div>
+                            <div>
+                                <label for="number-guests">Number od guests</label><br>
+                                <input type="number" name="number-of_guests" id="number-guests">
+                            </div>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Details</legend>
+                            <div>
+                                <label for="name">Name</label><br>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="email">Time</label><br>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="telephone">Number od guests</label><br>
+                                <input type="tel" name="telephone_number" id="telephone">
+                            </div>
+                        </fieldset>
+                    </div>
+
+
+                    <fieldset>
+                        <legend>Further request</legend>
+                        <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                    </fieldset>
+
+                    <div class="toolbar text-align">
+                        <button type="submit">RESERVE</button>
+                    </div>
+                </form>
+            </section>
+
+            <section>
+                <h2 class="text-align">Our location</h2>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer text-align">
+        <div class="container">
+            <div class="footer-freshly-restaurant">
+                <section>
+                    <h2>Opening hours</h2>
+                    <ul>
+                        <li>Monday : Closed</li>
+                        <li>Tue-Wed : 9am - 10pm</li>
+                        <li>Thu-Fri : 9am - 10pm</li>
+                        <li>Sat-Sun : 5pm - 10pm</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Contact</h2>
+                    <address>
+                        13 Christopher Street<br>
+                        New York,<br>
+                        NY 10014-3543<br><br>
+                        <a href="tel:+0120008009999">+01 2000 800 9999</a>
+                    </address>
+                </section>
+                <section>
+                    <h2>Social networks</h2>
+                    <a href="#" class="fa-brands fa-facebook-f brands-icone"></a>
+                    <a href="#" class="fa-brands fa-instagram brands-icone"></a>
+                    <a href="#" class="fa-brands fa-pinterest-p brands-icone"></a>
+                </section>
+            </div>
+        </div>
+        <div class="wa-academy">
+            <div class="container">
+                <a href="#">
+                    <img src="logo-3wa.png" alt="logo 3wa-academy">
+                </a>
+                <p>Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">pour l'usage personnel
+                    des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de
+                    Modification - International</a>.<br>
+                Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a
+                    href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a
+                    href="#">Catherine Denos</a>. </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

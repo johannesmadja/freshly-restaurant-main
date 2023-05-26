@@ -1,0 +1,151 @@
+
+/* *************************************************************************
+ATHITI
+************************************************************************* */
+/* Athiti - Extra light */
+@font-face {
+    font-family: "athiti";
+    src: url("../fonts/Athiti/athiti-extralight.woff2") format("woff2"),
+        url("../fonts/Athiti/athiti-extralight.woff") format("woff"),
+        url("../fonts/Athiti/athiti-extralight.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 200;
+}
+
+/* Athiti - light */
+@font-face {
+    font-family: "athiti";
+    src: url("../fonts/Athiti/athiti-light.woff2") format("woff2"),
+        url("../fonts/Athiti/athiti-light.woff") format("woff"),
+        url("../fonts/Athiti/athiti-light.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Athiti - Regular */
+@font-face {
+    font-family: "athiti";
+    src: url("../fonts/Athiti/athiti-regular.woff2") format("woff2"),
+        url("../fonts/Athiti/athiti-regular.woff") format("woff"),
+        url("../fonts/Athiti/athiti-regular.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Athiti - Medium */
+@font-face {
+    font-family: "athiti";
+    src: url("../fonts/Athiti/athiti-medium.woff2") format("woff2"),
+        url("../fonts/Athiti/athiti-medium.woff") format("woff"),
+        url("../fonts/Athiti/athiti-medium.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Athiti - Semi_Bold */
+@font-face {
+    font-family: "athiti";
+    src: url("../fonts/Athiti/athiti-semibold.woff2") format("woff2"),
+        url("../fonts/Athiti/athiti-semibold.woff") format("woff"),
+        url("../fonts/Athiti/athiti-semibold.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Athiti - Bold */
+@font-face {
+    font-family: "athiti";
+    src: url("../fonts/Athiti/athiti-bold.woff2") format("woff2"),
+        url("../fonts/Athiti/athiti-bold.woff") format("woff"),
+        url("../fonts/Athiti/athiti-bold.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+
+/* *************************************************************************
+Merienda
+************************************************************************* */
+/* Merienda - light */
+@font-face {
+    font-family: "merienda";
+    src: url("../fonts/Merienda/merienda-light.woff2") format("woff2"),
+        url("../fonts/Merienda/merienda-light.woff") format("woff"),
+        url("../fonts/Merienda/merienda-light.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 300;
+}
+
+/* Merienda - regular */
+@font-face {
+    font-family: "merienda";
+    src: url("../fonts/Merienda/merienda-regular.woff2") format("woff2"),
+        url("../fonts/Merienda/merienda-regular.woff") format("woff"),
+        url("../fonts/Merienda/merienda-regular.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Merienda - medium */
+@font-face {
+    font-family: "merienda";
+    src: url("../fonts/Merienda/merienda-medium.woff2") format("woff2"),
+        url("../fonts/Merienda/merienda-medium.woff") format("woff"),
+        url("../fonts/Merienda/merienda-medium.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Merienda - semi_bold */
+@font-face {
+    font-family: "merienda";
+    src: url("../fonts/Merienda/merienda-semibold.woff2") format("woff2"),
+        url("../fonts/Merienda/merienda-semibold.woff") format("woff"),
+        url("../fonts/Merienda/merienda-semibold.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Merienda - Bold */
+@font-face {
+    font-family: "merienda";
+    src: url("../fonts/Merienda/merienda-bold.woff2") format("woff2"),
+        url("../fonts/Merienda/merienda-bold.woff") format("woff"),
+        url("../fonts/Merienda/merienda-bold.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 700;
+}
+
+/* Merienda - semi_bold */
+@font-face {
+    font-family: "merienda";
+    src: url("../fonts/Merienda/merienda-extrabold.woff2") format("woff2"),
+        url("../fonts/Merienda/merienda-extrabold.woff") format("woff"),
+        url("../fonts/Merienda/merienda-extrabold.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 800;
+}
+
+/* Merienda - semi_bold */
+@font-face {
+    font-family: "merienda";
+    src: url("../fonts/Merienda/merienda-black.woff2") format("woff2"),
+        url("../fonts/Merienda/merienda-black.woff") format("woff"),
+        url("../fonts/Merienda/merienda-black.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: 900;
+}

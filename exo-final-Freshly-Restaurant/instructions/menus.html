@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="description" content="">
+    <!-- meta keywords -->
+    <meta name="keywords" content="">
+
+    <!-- favicon -->
+    <link rel="icon" href="ressources/images/favicon.png" type="image/png">
+
+    <!-- Importation de jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- Importation du plugin mixitup -->
+    <script src="plugins/mixitup/mixitup.min.js"></script>
+
+    <!-- intégration du CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Importation du script de fontawesome -->
+    <script src="https://kit.fontawesome.com/5032bc1a8b.js" crossorigin="anonymous"></script>
+
+    <!-- Script personnalisé -->
+    <script>
+        $(document).ready(function () {
+            let mixer = mixitup("#menu-images")
+        });
+    </script>
+
+    <title>Freshly Restaurant</title>
+</head>
+
+<body>
+    <header class="header text-align">
+        <div class="container en-tete-page">
+            <a href="home.html">
+                <img src="ressources/images/logo.png" alt="logo Freshly Restaurant">
+                <span>Freshly Restaurant</span>
+            </a>
+            <nav class="nav">
+                <ul class="ul-nav background-beige">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menus.html" class="page-active">Menus</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="details-menus">
+                <h2 class="text-align">Details of our menus</h2>
+                <p class="text-align">Choose your main course according to your menu !</p>
+
+                <div class="conteneur-button text-align">
+                    <button data-filter="all">All</button>
+                    <button data-filter=".meat">Meat</button>
+                    <button data-filter=".vegan">Vegan</button>
+                    <button data-filter=".fish">Fish</button>
+                </div>
+
+                <div class="menu-image image-conteneur  background-beige" id="menu-images">
+                    <div class="grilled-mussels items-flex mix fish">
+                        <img src="ressources/menus/fish-01.jpg" alt="Grilled mussels" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Grilled mussels</p>
+                        </div>
+                    </div>
+                    <div class="mixed-vegetables items-flex  mix vegan">
+                        <img src="ressources/menus/vegan-03.jpg" alt="Mixed vegetables" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Mixed vegetables</p>
+                        </div>
+                    </div>
+                    <div class="freshly-kebabs items-flex mix meat">
+                        <img src="ressources/menus/meat-03.jpg" alt="Freshly kebabs" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Freshly kebabs</p>
+                        </div>
+                    </div>
+                    <div class="cajun-shrimp items-flex mix fish">
+                        <img src="ressources/menus/fish-02.jpg" alt="Cajun shrimp" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Cajun shrimp</p>
+                        </div>
+                    </div>
+                    <div class="freshly-burger items-flex mix meat">
+                        <img src="ressources/menus/meat-01.jpg" alt="Freshly burger" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Freshly burger</p>
+                        </div>
+                    </div>
+                    <div class="grilled-eggplants items-flex  mix vegan">
+                        <img src="ressources/menus/vegan-02.jpg" alt="Grilled eggplants" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Grilled eggplants</p>
+                        </div>
+                    </div>
+                    <div class="beef-pasta items-flex mix meat">
+                        <img src="ressources/menus/meat-02.jpg" alt="Beef stew with pasta" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Beef stew with pasta</p>
+                        </div>
+                    </div>
+                    <div class="grilled-salmon items-flex mix fish">
+                        <img src="ressources/menus/fish-03.jpg" alt="Grilled salmon" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Grilled salmon</p>
+                        </div>
+                    </div>
+                    <div class="vegetable-jambalaya items-flex  mix vegan">
+                        <img src="ressources/menus/vegan-01.jpg" alt="Vegetable Jambalaya" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Vegetable Jambalaya</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-align">Deserts</h2>
+                <p class="text-align">Here are the deserts you can choose to finish your meal (included in your menu).
+                </p>
+                <div class="dessert-image image-conteneur background-beige">
+                    <div class="items-flex">
+                        <img src="ressources/menus/desert-01.jpg" alt="Tiramisu" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Tiramisu</p>
+                        </div>
+                    </div>
+                    <div class="items-flex">
+                        <img src="ressources/menus/desert-02.jpg" alt="Freshly Pancakes" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Freshly Pancakes</p>
+                        </div>
+                    </div>
+                    <div class="items-flex">
+                        <img src="ressources/menus/desert-03.jpg" alt="Redberries cup" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Redberries cup</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-align">Deserts Cocktails</h2>
+                <p class="text-align">Here are the deserts you can choose to finish your meal (included in your
+                    menu).Soft drinkgs are included, but if you want you can order one of our excellent cocktails (not
+                    included in the menu).</p>
+                <div class="cocktail-image image-conteneur background-beige">
+                    <div class="items-flex">
+                        <img src="ressources/menus/drink-01.jpg" alt="Winter Whiskey" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Winter Whiskey</p>
+                        </div>
+                    </div>
+                    <div class="items-flex">
+                        <img src="ressources/menus/drink-02.jpg" alt="Paloma cocktail" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Paloma cocktail</p>
+                        </div>
+                    </div>
+                    <div class="items-flex">
+                        <img src="ressources/menus/drink-03.jpg" alt="Bellini cocktail" class="images-menus">
+                        <div class="texte-menu-hover">
+                                <p><img src="ressources/images/fork-knife.svg" alt="fork-knife" class="fork-knife text-align">Bellini cocktail</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer text-align">
+        <div class="container">
+            <div class="footer-freshly-restaurant">
+                <section>
+                    <h2>Opening hours</h2>
+                    <ul>
+                        <li>Monday : Closed</li>
+                        <li>Tue-Wed : 9am - 10pm</li>
+                        <li>Thu-Fri : 9am - 10pm</li>
+                        <li>Sat-Sun : 5pm - 10pm</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Contact</h2>
+                    <address>
+                        13 Christopher Street<br>
+                        New York,<br>
+                        NY 10014-3543<br><br>
+                        <a href="tel:+0120008009999">+01 2000 800 9999</a>
+                    </address>
+                </section>
+                <section>
+                    <h2>Social networks</h2>
+                    <a href="#" class="fa-brands fa-facebook-f brands-icone"></a>
+                    <a href="#" class="fa-brands fa-instagram brands-icone"></a>
+                    <a href="#" class="fa-brands fa-pinterest-p brands-icone"></a>
+                </section>
+            </div>
+        </div>
+        <div class="wa-academy">
+            <div class="container">
+                <a href="#">
+                    <img src="logo-3wa.png" alt="logo 3wa-academy">
+                </a>
+                <p>Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">pour l'usage personnel
+                    des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de
+                    Modification - International</a>.<br>
+                    Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a
+                        href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a
+                        href="#">Catherine Denos</a>. </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

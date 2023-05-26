@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta description -->
+    <meta name="description" content="">
+    <!-- meta keywords -->
+    <meta name="keywords" content="">
+
+    <!-- favicon -->
+    <link rel="icon" href="ressources/images/favicon.png" type="image/png">
+
+    <!-- importation des CSS slick  -->
+    <link rel="stylesheet" href="plugins/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="plugins/slick-master/slick/slick-theme.css">
+    
+    <!-- Importation du script jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    
+    <!-- Importation du script slick-slide -->
+    <script src="plugins/slick-master/slick/slick.min.js"></script>
+    
+    <!-- Importation du script de fontawesome -->
+    <script src="https://kit.fontawesome.com/5032bc1a8b.js" crossorigin="anonymous"></script>
+    
+    <!-- intégration du CSS personnalisé -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Script personnalisé -->
+    <script>
+        $(document).ready(function(){
+            $("#slide").slick({
+                slidesToShow: 1,
+                dots: true,
+                autoplay: true,
+            });
+        });
+    </script>
+
+    <title>Freshly Restaurant</title>
+</head>
+
+<body>
+    <header class="header text-align">
+        <div class="container en-tete-page">
+            <a href="home.html">
+                <img src="ressources/images/logo.png" alt="logo Freshly Restaurant">
+                <span>Freshly Restaurant</span>
+            </a>
+            <nav class="nav">
+                <ul class="ul-nav background-beige">
+                    <li><a href="home.html" class="page-active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menus.html">Menus</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+
+            <div id="slide">
+                <img src="ressources/images/slider-01.jpg" alt="slider-01">
+                <img src="ressources/images/slider-02.jpg" alt="slider-02">
+                <img src="ressources/images/slider-03.jpg" alt="slider-03">
+            </div>
+
+            <article class="welcome">
+                    <h1 class="text-align">Welcome to Freshly Restaurant</h1>
+                    <img src="ressources/images/location.jpg" alt="image montrant le Freshly Restaurant">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem maiores ullam rerum ab sit magnam ad tempore laudantium! Voluptatem, enim quod? Accusantium soluta quod harum pariatur nisi velit quia saepe tempore placeat laborum nihil possimus doloribus sed cum illo doloremque ad nobis, reiciendis qui alias! Officia nisi, necessitatibus aspernatur mollitia nesciunt sed quasi autem ad quis quibusdam consequuntur repudiandae vitae, numquam dicta repellat. Aspernatur ducimus nostrum ab impedit iste, magnam velit in excepturi, error rem minima, debitis itaque! Aliquid nostrum!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio laborum, exercitationem blanditiis mollitia ea quaerat voluptatibus ad at sequi nemo soluta illo est eius officiis dolore neque! Voluptatum iure, hic natus nemo fugit perspiciatis tempore labore, impedit accusantium totam omnis sapiente. Eum veritatis quae, commodi laborum et perferendis. Et saepe doloribus quam sit. Id delectus iure cum non tenetur? Nihil perferendis quo sit modi impedit dolores ratione repellendus amet. Amet accusantium doloribus corrupti totam sunt modi tempore, ullam recusandae obcaecati. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ipsum quos accusamus eius, minus iure, enim odit omnis deleniti voluptatibus natus? Quos, voluptatem.</p>
+            </article>
+
+            <section class="special-menu">
+                <h2 class="text-align">Special menus</h2>
+
+                <article class="background-beige">
+                    <h3 class="text-align">Meat menu</h3>
+                    <figure>
+                        <div class="image-survol">
+                            <img src="ressources/images/meat-menu.jpg" alt="meat menu">
+                            <div class="block-au-survol text-align">
+                                <div class="texte-au-survol text-align">
+                                    <p><span>17$</span> <br> soft drinks and desert included<br> + taxes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <ul class="ul-menus">
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor amet.</li>
+                                <li>Lorem  consectetur adipisicing elit.</li>
+                                <li>Lorem  amet consectetur adipisicing.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                            </ul>
+                            <a href="" class="text-align readmore"> <img src="ressources/images/fork-knife.svg" alt="image fourchette-couteau"> See more</a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="background-beige">
+                    <h3 class="text-align">Fish menu</h3>
+                    <figure>
+                        <div class="image-survol">
+                            <img src="ressources/images/fish-menu.jpg" alt="fish menu">
+                            <div class="block-au-survol">
+                                <div class="texte-au-survol text-align">
+                                    <p><span>19$</span> <br> soft drinks and desert included<br> + taxes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <ul class="ul-menus">
+                                <li>Lorem ipsum dolor adipisicing.</li>
+                                <li>Lorem ipsum dolor amet.</li>
+                                <li>Lorem adipisicing elit.</li>
+                                <li>Lorem  amet consectetur adipisicing.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                            </ul>
+                            <a href="" class="text-align readmore"> <img src="ressources/images/fork-knife.svg" alt="image fourchette-couteau"> See more</a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="background-beige">
+                    <h3 class="text-align">Vegetarian menu</h3>
+                    <figure>
+                        <div class="image-survol">
+                            <img src="ressources/images/vegetarian-menu.jpg" alt="Vegetarian menu">
+                            <div class="block-au-survol">
+                                <div class="texte-au-survol text-align">
+                                    <p><span>18$</span> <br> soft drinks and desert included<br> + taxes</p>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption>
+                            <ul class="ul-menus">
+                                <li>Lorem ipsum dolor sit.</li>
+                                <li>Lorem ipsum dolor consectetur.</li>
+                                <li>Lorem  consectetur adipisicing elit.</li>
+                                <li>Lorem  amet consectetur.</li>
+                                <li>Lorem ipsum dolor sit.</li>
+                            </ul>
+                            <a href="" class="text-align readmore"> <img src="ressources/images/fork-knife.svg" alt="image fourchette-couteau"> See more</a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer text-align">
+        <div class="container">
+            <div class="footer-freshly-restaurant">
+                <section>
+                    <h2>Opening hours</h2>
+                    <ul>
+                        <li>Monday : Closed</li>
+                        <li>Tue-Wed : 9am - 10pm</li>
+                        <li>Thu-Fri : 9am - 10pm</li>
+                        <li>Sat-Sun : 5pm - 10pm</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>Contact</h2>
+                    <address>
+                        13 Christopher Street<br>
+                        New York,<br>
+                        NY 10014-3543<br><br>
+                        <a href="tel:+0120008009999">+01 2000 800 9999</a>
+                    </address>
+                </section>
+                <section>
+                    <h2>Social networks</h2>
+                    <a href="#" class="fa-brands fa-facebook-f brands-icone"></a>
+                    <a href="#" class="fa-brands fa-instagram brands-icone"></a>
+                    <a href="#" class="fa-brands fa-pinterest-p brands-icone"></a>
+                </section>
+            </div>
+        </div>    
+        <div class="wa-academy">
+            <div class="container">
+                <a href="#">
+                    <img src="logo-3wa.png" alt="logo 3wa-academy">
+                </a>
+                <p>Cet exercice de <a href="#">3W Academy</a> est mis à disposition <a href="#">pour l'usage personnel des étudiants. Pas de Rediffusion - Attribution - Pas d'Utilisation Commerciale - Pas de Modification - International</a>.<br>
+                Les autorisations au-delà du champ de cette licence peuvent être obtenues auprès de <a href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisées par <a href="#">Catherine Denos</a>. </p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+</html>
